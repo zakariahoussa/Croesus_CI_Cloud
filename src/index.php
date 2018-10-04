@@ -31,26 +31,5 @@
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
         <script src="assets/js/bootstrap.min.js"></script>
     </body>
-                                                         <!-- Section anglais -->
-                                                        <?php if($enSection != null){ ?>
-                                                                <div id="enSection" test-id="en-section" class="lang-section">
-                                                                        <?php if($enSection->logo != null && $enSection->logo != ""){ ?>
-                                                                                <?php if($launcher->active == null || ($launcher->active != null && $launcher->active == false)){ ?>
-                                                                                        <a class="imglink" href="crweb/cgi-bin/crco.cgi?<?php echo $params; ?>&lang=en"><img test-id="client-logo-en" src="<?php echo $enSection->logo; ?>" alt="logo"></a>
-                                                                                <?php } ?>
-                                                                                <?php if($launcher->active != null && $launcher->active == true){ ?>
-                                                                                        <a class="imglink" href="crweb/cgi-bin/crcolauncher.cgi?<?php echo $params; ?>&lang=en"><img test-id="client-logo-en" src="<?php echo $enSection->logo; ?>" alt="logo"></a>
-                                                                                <?php } ?>
-                                                                        <?php } ?>
-                                                                        <h2 test-id="en-title"><?php echo $enSection->title; ?></h2>
-                                                                                <p test-id="en-description"><?php echo $enSection->description; ?></p>
 
-                                                                                <?php if($launcher->active == null || ($launcher->active != null && $launcher->active == false)){ ?>
-                                                                                        <a test-id="en-button" href="crweb/cgi-bin/crco.cgi?<?php echo $params; ?>&lang=en"><?php echo $enSection->button; ?></a>
-                                                                                <?php } ?>
-                                                                                <?php if($launcher->active != null && $launcher->active == true){ ?>
-                                                                                        <a test-id="en-button" href="crweb/cgi-bin/crcolauncher.cgi?<?php echo $params; ?>&lang=en"><?php echo $enSection->button; ?></a>
-                                                                                <?php } ?>
-                                                                </div>
-                                                        <?php } ?>
 </html>
