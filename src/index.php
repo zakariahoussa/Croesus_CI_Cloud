@@ -36,9 +36,9 @@
 				</div>
 
 				<form class="login100-form validate-form">
-					<div class="wrap-input100 validate-input m-b-26" data-validate="User is required">
-						<span class="label-input100">User</span>
-						<input class="input100" type="text" name="User" placeholder="Enter User">
+					<div class="wrap-input100 validate-input m-b-26" data-validate="utilisateur is required">
+						<span class="label-input100">utilisateur</span>
+						<input class="input100" type="text" name="utilisateur" placeholder="Enter utilisateur">
 						<span class="focus-input100"></span>
 					</div>
 
